@@ -1,0 +1,15 @@
+[run]
+omit =
+    manage.py
+    wsgi.py
+    */tests/*
+    */test_*.py
+    utils/log.py
+
+[report]
+exclude_lines =
+    pragma: no cover
+    if __name__ == .__main__.:
+    raise AssertionError
+    raise NotImplementedError
+    def __repr__
